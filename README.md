@@ -53,23 +53,7 @@ Monte Carlo replications (N = 50) sized via Statistical Model Checking (SMC):
 - Polarization Index: relative half-width ≤ 5%;
 - Gini coefficient: absolute half-width ≤ 0.01.
 
-## Directory Structure
 
-    .
-    ├── model/          # ABM implementation (Mesa / Python)
-    ├── calibration/    # SMM grid-search scripts
-    ├── smc/            # Statistical Model Checking driver
-    ├── simulations/    # Monte-Carlo experiment runner
-    ├── figures/        # Generated plots
-    ├── data/           # Calibration targets
-    └── paper/          # LaTeX source
-
-## Reproduction
-
-    pip install mesa numpy scipy pandas matplotlib
-    python calibration/run_smm.py
-    python simulations/run_mc.py --n-reps 50 --horizon 150
-    python simulations/plot_results.py
 
 ## References
 
